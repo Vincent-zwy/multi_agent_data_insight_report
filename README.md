@@ -128,21 +128,4 @@ python scheduler.py --data sample_data/sales_demo.csv --date-col date --target s
 | ReportAgent | 汇总所有 Agent 结果，生成 Markdown / HTML 日报 |
 | Pipeline Supervisor | 调度所有 Agent 顺序执行，统一管理上下文 |
 
----
 
-## 6. 替换自己的数据
-
-你的数据至少建议包含：
-
-- 日期列，例如：`date`
-- 数值指标列，例如：`sales`、`revenue`、`cost`、`orders`
-- 可选分组列，例如：`region`、`product`、`channel`
-
-运行示例：
-
-```bash
-python run.py --data your_data.csv --date-col 日期 --target 销售额 --group-cols 地区 产品
-```
-
-
-MIT License
